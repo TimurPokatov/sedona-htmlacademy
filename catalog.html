@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="icon" href="favicon.ico"> <!-- 32×32 -->
+  <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicons/favicon-180.png"> <!-- 180×180 -->
+  <link rel="manifest" href="manifest.webmanifest">
+  <title>HTML Academy: Седона. Каталог фото и видео</title>
+</head>
+<body class="page__body">
+  <div class="page__container">
+    <header class="header">
+      <a class="header__logo" href="index.html">
+        <img class="header__logo-image" src="img/svg/logo-sedona.svg" width="185" height="96" alt="Логотип города Седона.">
+      </a>
+      <!-- Классы "nav--closed" и "nav--opened" для управления бургерным меню в мобильной версии -->
+      <nav class="nav nav--closed nav--nojs">
+        <button class="nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <div class="nav__wrapper">
+          <ul class="nav__list site-list">
+            <li class="site-list__item">
+              <a class="site-list__link"  href="index.html">
+                Главная
+              </a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" aria-current="page" href="catalog.html">
+                Фото и видео
+              </a>
+            </li>
+          </ul>
+          <ul class="nav__list user-list">
+            <li class="user-list__item">
+              <a class="user-list__link" href="form.html">
+                Форма Отзыва
+              </a>
+            </li>
+            <li class="user-list__item">
+              <a class="user-list__link" href="https://htmlacademy.ru/intensive/adaptive">
+                HTML Academy
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main class="main-container">
+      <section class="gallery">
+        <header class="gallery__header header-inner header-inner--small">
+          <img class="header-inner__img header-inner__img--small" src="img/svg/hero-logo-small.svg" width="229" height="39" alt="Логотип города Седона.">
+        </header>
+        <h1 class="gallery__title gallery__title--top">Фото и видео</h1>
+        <p class="gallery__subtitle">Не можете решиться на путешествие из-за курса? <br>Фотографии помогут вам забыть о политике и экономике.</p>
+        <ul class="gallery__list">
+          <li class="gallery__item gallery__item--dividing-line gallery__item--foto-wide">
+            <picture>
+              <source type="image/webp" media="(min-width: 1200px)" srcset="img/gallery/photo-1-desktop.webp 1x, img/gallery/photo-1-desktop@2x.webp 2x" width="1200" height="400">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/gallery/photo-1-tablet.webp 1x, img/gallery/photo-1-tablet@2x.webp 2x" width="648" height="400">
+              <source type="image/webp" srcset="img/gallery/photo-1-mobile.webp 1x, img/gallery/photo-1-mobile@2x.webp 2x" width="280" height="280">
+              <source media="(min-width: 1200px)" srcset="img/gallery/photo-1-desktop.jpg 1x, img/gallery/photo-1-desktop@2x.jpg 2x" width="1200" height="400">
+              <source media="(min-width: 768px)" srcset="img/gallery/photo-1-tablet.jpg 1x, img/gallery/photo-1-tablet@2x.jpg 2x" width="648" height="400">
+              <img class="gallery__photo" src="img/gallery/photo-1-mobile.jpg" srcset="img/gallery/photo-1-mobile@2x.jpg 2x" width="280" height="280" alt="Дорога в Аризоне.">
+            </picture>
+            <div class="gallery__wrapper">
+              <div class="gallery__inner">
+                <h2 class="gallery__signature">Неродные просторы</h2>
+                <p class="gallery__author">Автор фото: Борис</p>
+              </div>
+              <button class="gallery__like-button" type="button">
+                <span class="visually-hidden">Поставить лайк</span>
+                <svg class="gallery__rating-icon" width="23" height="21" fill="currentColor" focusable="false">
+                  <use xlink:href="img/svg/sprite.svg#icon-catalog-rating"></use>
+                </svg>
+                <span class="gallery__rating">1350</span>
+              </button>
+            </div>
+          </li>
+          <li class="gallery__item gallery__item--dividing-line">
+            <picture>
+              <source type="image/webp" media="(min-width: 1200px)" srcset="img/gallery/photo-2-desktop.webp 1x, img/gallery/photo-2-desktop@2x.webp 2x" width="400" height="267">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/gallery/photo-2-tablet.webp 1x, img/gallery/photo-2-tablet@2x.webp 2x" width="324" height="267">
+              <source type="image/webp" srcset="img/gallery/photo-2-mobile.webp 1x, img/gallery/photo-2-mobile@2x.webp 2x" width="280" height="280">
+              <source media="(min-width: 1200px)" srcset="img/gallery/photo-2-desktop.jpg 1x, img/gallery/photo-2-desktop@2x.jpg 2x" width="400" height="267">
+              <source media="(min-width: 768px)" srcset="img/gallery/photo-2-tablet.jpg 1x, img/gallery/photo-2-tablet@2x.jpg 2x" width="324" height="267">
+              <img class="gallery__photo" src="img/gallery/photo-2-mobile.jpg" srcset="img/gallery/photo-2-mobile@2x.jpg 2x" width="280" height="280" alt="Кактусовая веточка.">
+            </picture>
+            <div class="gallery__wrapper">
+              <div class="gallery__inner">
+                <h2 class="gallery__signature">Местная растительность</h2>
+                <p class="gallery__author">Автор фото: Сергей</p>
+              </div>
+              <button class="gallery__like-button" type="button">
+                <span class="visually-hidden">Поставить лайк</span>
+                <svg class="gallery__rating-icon" width="23" height="21" fill="currentColor" focusable="false">
+                  <use xlink:href="img/svg/sprite.svg#icon-catalog-rating"></use>
+                </svg>
+                <span class="gallery__rating">143</span>
+              </button>
+            </div>
+          </li>
+          <li class="gallery__item gallery__item--dividing-line">
+            <picture>
+              <source type="image/webp" media="(min-width: 1200px)" srcset="img/gallery/photo-3-desktop.webp 1x, img/gallery/photo-3-desktop@2x.webp 2x" width="400" height="267">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/gallery/photo-3-tablet.webp 1x, img/gallery/photo-3-tablet@2x.webp 2x" width="324" height="267">
+              <source type="image/webp" srcset="img/gallery/photo-3-mobile.webp 1x, img/gallery/photo-3-mobile@2x.webp 2x" width="280" height="280">
+              <source media="(min-width: 1200px)" srcset="img/gallery/photo-3-desktop.jpg 1x, img/gallery/photo-3-desktop@2x.jpg 2x" width="400" height="267">
+              <source media="(min-width: 768px)" srcset="img/gallery/photo-3-tablet.jpg 1x, img/gallery/photo-3-tablet@2x.jpg 2x" width="324" height="267">
+              <img class="gallery__photo" src="img/gallery/photo-3-mobile.jpg" srcset="img/gallery/photo-3-mobile@2x.jpg 2x" width="280" height="280" alt="Горная дорога с орлиной высоты.">
+            </picture>
+            <div class="gallery__wrapper gallery__wrapper--accented-background">
+              <div class="gallery__inner">
+                <h2 class="gallery__signature">Дорога на север</h2>
+                <p class="gallery__author">Автор фото: Петр</p>
+              </div>
+              <button class="gallery__like-button" type="button">
+                <span class="visually-hidden">Поставить лайк</span>
+                <svg class="gallery__rating-icon" width="23" height="21" fill="currentColor" focusable="false">
+                  <use xlink:href="img/svg/sprite.svg#icon-catalog-rating"></use>
+                </svg>
+                <span class="gallery__rating">96</span>
+              </button>
+            </div>
+          </li>
+          <li class="gallery__item gallery__item--dividing-line">
+            <picture>
+              <source type="image/webp" media="(min-width: 1200px)" srcset="img/gallery/photo-4-desktop.webp 1x, img/gallery/photo-4-desktop@2x.webp 2x" width="400" height="267">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/gallery/photo-4-tablet.webp 1x, img/gallery/photo-4-tablet@2x.webp 2x" width="324" height="267">
+              <source type="image/webp" srcset="img/gallery/photo-4-mobile.webp 1x, img/gallery/photo-4-mobile@2x.webp 2x" width="280" height="280">
+              <source media="(min-width: 1200px)" srcset="img/gallery/photo-4-desktop.jpg 1x, img/gallery/photo-4-desktop@2x.jpg 2x" width="400" height="267">
+              <source media="(min-width: 768px)" srcset="img/gallery/photo-4-tablet.jpg 1x, img/gallery/photo-4-tablet@2x.jpg 2x" width="324" height="267">
+              <img class="gallery__photo" src="img/gallery/photo-4-mobile.jpg" srcset="img/gallery/photo-4-mobile@2x.jpg 2x" width="280" height="280" alt="Хрестоматийный вид на Мост дьявола.">
+            </picture>
+            <div class="gallery__wrapper">
+              <div class="gallery__inner">
+                <h2 class="gallery__signature">Мост дьявола</h2>
+                <p class="gallery__author">Автор фото: Антон</p>
+              </div>
+              <button class="gallery__like-button" type="button">
+                <span class="visually-hidden">Поставить лайк</span>
+                <svg class="gallery__rating-icon" width="23" height="21" fill="currentColor" focusable="false">
+                  <use xlink:href="img/svg/sprite.svg#icon-catalog-rating"></use>
+                </svg>
+                <span class="gallery__rating">254</span>
+              </button>
+            </div>
+          </li>
+        </ul>
+        <p class="gallery__title gallery__title--bottom">Все еще сомневаетесь?</p>
+        <p class="gallery__subtitle">Смотрите видеопрезентацию и скорее за билетами, пока они <br>не подорожали в очередной раз!</p>
+        <div class="gallery__video-container video">
+          <picture>
+            <source type="image/webp" media="(min-width: 1200px)" srcset="img/gallery/video-desktop.webp 1x, img/gallery/video-desktop@2x.webp 2x" width="800" height="500">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/gallery/video-tablet.webp 1x, img/gallery/video-tablet@2x.webp 2x" width="648" height="500">
+            <source type="image/webp" srcset="img/gallery/video-mobile.webp 1x, img/gallery/video-mobile@2x.webp 2x" width="280" height="177">
+            <source media="(min-width: 1200px)" srcset="img/gallery/video-desktop.jpg 1x, img/gallery/video-desktop@2x.jpg 2x" width="800" height="500">
+            <source media="(min-width: 768px)" srcset="img/gallery/video-tablet.jpg 1x, img/gallery/video-tablet@2x.jpg 2x" width="648" height="500">              <img class="video__photo-poster" src="img/gallery/video-mobile.jpg" srcset="img/gallery/video-mobile@2x.jpg 2x" width="280" height="177" alt="Стоп-кадр видеоплеера.">
+          </picture>
+          <button class="video__button button-basic" type="button">
+            <span class="visually-hidden">Воспроизвести видео.</span>
+            <svg width="48" height="54" fill="currentColor" focusable="false">
+              <use xlink:href="img/svg/sprite.svg#video-button"></use>
+            </svg>
+          </button>
+        </div>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <span class="visually-hidden">Наш хештег:</span>
+      <a class="page-footer__link" href="#">
+        <p class="page-footer__text page-footer__text--hashtag">#visitSEDONA</p>
+      </a>
+      <ul class="social">
+        <li class="social__item">
+          <a class="social__link button-basic" href="https://vk.com/htmlacademy">
+            <span class="visually-hidden">Мы ВКонтакте.</span>
+            <svg width="24" height="14" fill="currentColor" focusable="false">
+              <use xlink:href="img/svg/sprite.svg#icon-vk"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link button-basic" href="https://t.me/htmlacademy">
+            <span class="visually-hidden">Наш Телеграм.</span>
+            <svg width="22" height="18" fill="currentColor" focusable="false">
+              <use xlink:href="img/svg/sprite.svg#icon-telegram"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link button-basic" href="https://www.youtube.com/user/htmlacademyru">
+            <span class="visually-hidden">Наш канал на YouTube.</span>
+            <svg width="20" height="14" fill="currentColor" focusable="false">
+              <use xlink:href="img/svg/sprite.svg#icon-youtube"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+      <a class="page-footer__link page-footer__link--last" href="https://htmlacademy.ru/intensive/adaptive">
+        <p class="page-footer__text page-footer__text--made-in">Разработано</p>
+        <span class="visually-hidden">в HTML Academy.</span>
+        <svg width="27" height="36" fill="currentColor" focusable="false">
+          <use xlink:href="img/svg/sprite.svg#icon-htmlacademy"></use>
+        </svg>
+      </a>
+    </footer>
+  </div>
+  <script src="js/script.js"></script>
+</body>
+</html>
